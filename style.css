@@ -1,0 +1,14 @@
+.heimu {
+    background-color: black;
+    color: black;
+    transition: background-color 0.5s
+}
+
+.heimu:hover {
+    background-color: #fff
+}
+
+.mohu {
+    transition: 0.3s;
+    filter: blur(3px)
+}
