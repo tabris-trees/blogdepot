@@ -12,3 +12,7 @@
     transition: 0.3s;
     filter: blur(3px)
 }
+
+.mohu:hover {
+    filter: blur(0px);
+}
