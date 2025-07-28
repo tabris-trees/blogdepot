@@ -16,3 +16,7 @@
 .mohu:hover {
     filter: blur(0px);
 }
+
+.avatar-img img:hover {
+  transform: none !important;
+}
