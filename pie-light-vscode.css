@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+
+:root {
+  --pie-primary: #da282a;
+  --pie-primary-soft: #fff2f0;
+  --pie-primary-mid: #ffd6d1;
+  --pie-primary-border: #f27f79;
+  --pie-text: #262626;
+  --pie-text-soft: #595959;
+  --pie-text-faint: #8c8c8c;
+  --pie-bg: #ffffff;
+  --pie-panel: #fafafa;
+  --pie-panel-2: #f5f5f5;
+  --pie-border: #e7e7e7;
+  --pie-code-bg: #292d3e;
+  --pie-code-text: #f0f0f0;
+  --pie-code-muted: #676e95;
+  --pie-shadow: 0 18px 48px -24px rgba(38, 38, 38, 0.24);
+  --pie-font-sans: "Source Sans 3", "Source Sans Pro", "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --pie-font-code: "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+}
+
+body.vscode-body,
+body.vscode-body.markdown-preview-view,
+body.vscode-body.markdown-preview {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 36px 140px;
+  color: var(--pie-text);
+  background: var(--pie-bg);
+  font-family: var(--pie-font-sans);
+  font-size: 15px;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.vscode-body * {
+  box-sizing: border-box;
+}
+
+body.vscode-body > :first-child {
+  margin-top: 0 !important;
+}
+
+body.vscode-body > :last-child {
+  margin-bottom: 0 !important;
+}
+
+body.vscode-body p,
+body.vscode-body blockquote,
+body.vscode-body ul,
+body.vscode-body ol,
+body.vscode-body dl,
+body.vscode-body table {
+  margin: 0.9em 0;
+}
+
+body.vscode-body p {
+  word-spacing: 0.05rem;
+  text-align: justify;
+}
+
+body.vscode-body ul,
+body.vscode-body ol {
+  padding-left: 1.9em;
+}
+
+body.vscode-body li > ul,
+body.vscode-body li > ol {
+  margin: 0.2em 0 0;
+}
+
+body.vscode-body li::marker {
+  color: var(--pie-primary);
+}
+
+body.vscode-body a {
+  padding: 0 2px;
+  font-weight: 600;
+  color: var(--pie-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--pie-primary);
+  transition: border-bottom-width 0.16s ease, color 0.16s ease;
+}
+
+body.vscode-body a:hover {
+  color: var(--pie-primary);
+  border-bottom-width: 2px;
+}
+
+body.vscode-body h1,
+body.vscode-body h2,
+body.vscode-body h3,
+body.vscode-body h4,
+body.vscode-body h5,
+body.vscode-body h6 {
+  position: relative;
+  margin-top: 1.15em;
+  margin-bottom: 0.8em;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--pie-text);
+  border: 0;
+}
+
+body.vscode-body h1 code,
+body.vscode-body h2 code,
+body.vscode-body h3 code,
+body.vscode-body h4 code,
+body.vscode-body h5 code,
+body.vscode-body h6 code {
+  font-size: inherit;
+}
+
+body.vscode-body h1 {
+  margin: 2.3em auto 1.2em;
+  font-size: 2.35em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+body.vscode-body h1::after {
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 0.28em auto 0;
+  content: "";
+  border-bottom: 2px dashed var(--pie-primary);
+}
+
+body.vscode-body h2 {
+  padding-left: 10px;
+  margin: 1.9em auto 1.1em;
+  font-size: 1.72em;
+  border-left: 6px solid var(--pie-primary);
+}
+
+body.vscode-body h3 {
+  margin: 1.55em auto 0.95em;
+  font-size: 1.34em;
+}
+
+body.vscode-body h3::before {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  margin-bottom: 0.16em;
+  vertical-align: middle;
+  content: "";
+  background: var(--pie-primary-border);
+  border-radius: 999px;
+}
+
+body.vscode-body h4 {
+  margin-top: 1.35em;
+  font-size: 1.14em;
+}
+
+body.vscode-body h4::before {
+  display: inline-block;
+  width: 7px;
+  height: 2px;
+  margin-right: 8px;
+  margin-bottom: 0.2em;
+  vertical-align: middle;
+  content: "";
+  background: var(--pie-primary-border);
+}
+
+body.vscode-body h5,
+body.vscode-body h6 {
+  font-size: 1em;
+}
+
+body.vscode-body h6 {
+  color: var(--pie-text-faint);
+}
+
+body.vscode-body hr {
+  width: 100%;
+  height: 1px;
+  margin: 46px auto 64px;
+  background: var(--pie-primary-border);
+  border: 0;
+}
+
+body.vscode-body strong {
+  font-weight: 700;
+  color: var(--pie-text);
+}
+
+body.vscode-body em {
+  padding: 0 3px 0 1px;
+}
+
+body.vscode-body del {
+  padding: 1px 2px;
+}
+
+body.vscode-body mark {
+  padding: 2px 6px;
+  margin: 0 2px;
+  font-weight: 600;
+  color: #222;
+  background: #f6b0a8;
+  border-radius: 4px;
+}
+
+body.vscode-body blockquote {
+  position: relative;
+  padding: 24px 16px 12px;
+  margin: 24px 0 36px;
+  color: var(--pie-text-soft);
+  background: linear-gradient(180deg, rgba(255, 242, 240, 0.55), rgba(255, 255, 255, 0));
+  border: 0;
+  border-left: 2px solid var(--pie-primary);
+}
+
+body.vscode-body blockquote::before {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  font-family: Georgia, serif;
+  font-size: 2.1em;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--pie-primary);
+  content: "“";
+}
+
+body.vscode-body blockquote > :first-child {
+  margin-top: 0;
+}
+
+body.vscode-body blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+body.vscode-body table {
+  display: table;
+  width: 100%;
+  margin: 36px auto;
+  overflow: hidden;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: var(--pie-bg);
+  border: 1px solid var(--pie-border);
+  box-shadow: 0 12px 30px -28px rgba(0, 0, 0, 0.3);
+}
+
+body.vscode-body table thead,
+body.vscode-body table tr:nth-child(2n) {
+  background: var(--pie-panel-2);
+}
+
+body.vscode-body table th,
+body.vscode-body table td {
+  padding: 8px 13px;
+  text-align: left;
+  border: 1px solid var(--pie-border);
+}
+
+body.vscode-body table th {
+  font-weight: 700;
+}
+
+body.vscode-body img {
+  display: block;
+  max-width: 100%;
+  margin: 24px auto;
+  border-radius: 6px;
+}
+
+body.vscode-body img[alt^="shadow-"],
+body.vscode-body img[alt|="shadow"] {
+  box-shadow: var(--pie-shadow);
+}
+
+body.vscode-body code {
+  padding: 0.12em 0.42em 0.06em;
+  margin: 0 2px;
+  font-family: var(--pie-font-code);
+  font-size: 0.92em;
+  color: #e6514e;
+  background: var(--pie-primary-soft);
+  border-radius: 4px;
+}
+
+body.vscode-body pre {
+  margin: 1.8rem 0 2rem;
+  overflow: auto;
+  background: var(--pie-code-bg);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px -24px rgba(41, 45, 62, 0.9);
+}
+
+body.vscode-body pre code {
+  display: block;
+  padding: 1rem 1.1rem;
+  margin: 0;
+  color: var(--pie-code-text);
+  background: transparent;
+  border-radius: 0;
+  font-family: var(--pie-font-code);
+  font-size: 0.92em;
+  line-height: 1.65;
+  tab-size: 2;
+}
+
+body.vscode-body pre code .hljs-comment,
+body.vscode-body pre code .token.comment {
+  color: var(--pie-code-muted);
+}
+
+body.vscode-body pre code .hljs-keyword,
+body.vscode-body pre code .token.keyword {
+  color: #c792ea;
+}
+
+body.vscode-body pre code .hljs-string,
+body.vscode-body pre code .token.string {
+  color: #c3e88d;
+}
+
+body.vscode-body pre code .hljs-number,
+body.vscode-body pre code .token.number {
+  color: #ff5370;
+}
+
+body.vscode-body pre code .hljs-title,
+body.vscode-body pre code .hljs-function,
+body.vscode-body pre code .token.function {
+  color: #82aaff;
+}
+
+body.vscode-body pre code .hljs-built_in,
+body.vscode-body pre code .token.builtin {
+  color: #ffcb6b;
+}
+
+body.vscode-body pre code .hljs-attr,
+body.vscode-body pre code .hljs-attribute,
+body.vscode-body pre code .token.attr-name {
+  color: #c792ea;
+}
+
+body.vscode-body pre code .hljs-variable,
+body.vscode-body pre code .token.variable {
+  color: #f07178;
+}
+
+body.vscode-body :not(pre) > code {
+  vertical-align: 0.4px;
+}
+
+body.vscode-body ul.contains-task-list,
+body.vscode-body .task-list {
+  padding-left: 1.7em;
+}
+
+body.vscode-body .task-list-item {
+  list-style: none;
+}
+
+body.vscode-body .task-list-item input[type="checkbox"] {
+  position: relative;
+  width: 0.92rem;
+  height: 0.92rem;
+  margin-right: 0.45rem;
+  vertical-align: -0.12rem;
+  appearance: none;
+  background: var(--pie-bg);
+  border: 1px solid var(--pie-primary-border);
+  border-radius: 2px;
+}
+
+body.vscode-body .task-list-item input[type="checkbox"]:checked {
+  background: var(--pie-primary);
+  border-color: var(--pie-primary);
+}
+
+body.vscode-body .task-list-item input[type="checkbox"]:checked::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  content: "✓";
+  transform: translate(-50%, -58%);
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
+body.vscode-body .footnotes,
+body.vscode-body .footnote-definition {
+  color: var(--pie-text-soft);
+}
+
+body.vscode-body .footnote-ref,
+body.vscode-body .footnote-backref {
+  color: #e6514e;
+}
+
+body.vscode-body kbd {
+  padding: 0.08em 0.45em;
+  font-family: var(--pie-font-code);
+  font-size: 0.9em;
+  color: var(--pie-text);
+  background: var(--pie-panel);
+  border: 1px solid var(--pie-border);
+  border-bottom-color: #d4d4d4;
+  border-radius: 4px;
+  box-shadow: inset 0 -1px 0 #ececec;
+}
+
+body.vscode-body .math.math-display,
+body.vscode-body .katex-display {
+  margin: 1.35em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+body.vscode-body .katex {
+  font-size: 1.03em;
+}
+
+body.vscode-body .markdown-alert,
+body.vscode-body .admonition {
+  padding: 14px 16px;
+  margin: 1.25em 0;
+  background: var(--pie-panel);
+  border-left: 4px solid var(--pie-primary);
+  border-radius: 6px;
+}
+
+@media (max-width: 820px) {
+  body.vscode-body,
+  body.vscode-body.markdown-preview-view,
+  body.vscode-body.markdown-preview {
+    padding: 24px 20px 100px;
+    font-size: 14px;
+  }
+
+  body.vscode-body h1 {
+    font-size: 2.05em;
+  }
+
+  body.vscode-body h2 {
+    font-size: 1.48em;
+  }
+}
+
+@media print {
+  body.vscode-body {
+    max-width: none;
+    padding: 0;
+    font-size: 13px;
+  }
+
+  body.vscode-body pre,
+  body.vscode-body table {
+    page-break-inside: avoid;
+  }
+}
